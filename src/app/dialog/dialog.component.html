@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Choose user to add to {{data.roleName}}</h2>
+
+<mat-dialog-content>
+ <table>
+   <tr>
+      <th>Name</th>
+      <th>Add</th>
+   </tr>
+   <tr *ngFor="let user of usersToAdd">
+      <td>{{user.firstName}} {{user.lastName}}</td>
+      <td><button class="mat-raised-button mat-primary"(click)="add(user)">Add</button></td>
+   </tr>
+ </table>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+</mat-dialog-actions>
