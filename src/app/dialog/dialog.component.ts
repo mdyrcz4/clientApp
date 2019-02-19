@@ -10,7 +10,7 @@ import { User } from '../models/user';
 })
 export class DialogComponent implements OnInit {
 
-  private data;
+  public data;
   public usersToAdd;
 
   constructor(
